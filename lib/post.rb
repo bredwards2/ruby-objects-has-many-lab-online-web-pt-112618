@@ -5,6 +5,8 @@ class Post
     @title = title
   end
   
+class New 
+  
 
    def author_name
     if author 
