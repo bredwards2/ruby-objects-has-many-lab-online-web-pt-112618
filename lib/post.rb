@@ -1,15 +1,16 @@
 class Post
+  attr_accessor :author, :title 
 
-  attr_accessor :title, :author
-  def initialize(title)
+   def initialize(title)
     @title = title
   end
 
-  def author_name
-    if @author == nil
-      return nil
+   def author_name
+    if author 
+      self.author.name 
     else
-      @author.name
+      nil
     end
   end
-end
+
+ end 
